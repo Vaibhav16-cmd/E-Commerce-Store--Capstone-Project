@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My E-Commerce Store</h1>
+
+    <div class="controls">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Products"
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+
+        <select id="sortPrice">
+            <option value="default">Sort By Price</option>
+            <option value="low-high">Low To High</option>
+            <option value="high-low">High To Low</option>
+        </select>
+
+        <button id="themeBtn">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Welcome To Our Store</h2>
+    <p>Find Amazing Products At Affordable Prices</p>
+</section>
+
+<section class="products-section">
+
+    <h2>Our Products</h2>
+
+    <div id="products" class="products">
+
+    </div>
+
+</section>
+
+<section class="cart-section">
+
+    <h2>Shopping Cart</h2>
+
+    <div class="cart-summary">
+
+        Items:
+        <span id="cartCount">0</span>
+
+        |
+
+        Total:
+        ₹<span id="cartTotal">0</span>
+
+    </div>
+
+    <div id="cartItems"></div>
+
+    <button id="clearCart">
+        Clear Cart
+    </button>
+
+</section>
+
+<section class="checkout-section">
+
+    <h2>Place Your Order</h2>
+
+    <form id="orderForm">
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter Your Full Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter Your Mobile Number"
+            required
+        >
+
+        <textarea
+            id="customerAddress"
+            placeholder="Enter Your Delivery Address"
+            required
+        ></textarea>
+
+        <button type="submit" id="orderBtn">
+            Place Order
+        </button>
+
+    </form>
+
+    <div id="orderMessage"></div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 My E-Commerce Store |
+        Internship Task 5 Capstone Project
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
